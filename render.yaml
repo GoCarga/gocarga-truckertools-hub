@@ -1,0 +1,6 @@
+services:
+- type: web
+  env: node
+  name: gocarga-truckertools-hub
+  buildCommand: npm install
+  startCommand: npm start
