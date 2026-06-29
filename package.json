@@ -1,6 +1,19 @@
 {
-  "name":"gocarga-truckertools-hub",
-  "version":"1.0.0",
-  "type":"module",
-  "scripts":{"start":"node server.js"}
+  "name": "gocarga-truckertools-hub",
+  "version": "1.0.0",
+  "description": "Standalone Render service for TruckerTools shipper links using Playwright.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "playwright": "^1.49.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }
